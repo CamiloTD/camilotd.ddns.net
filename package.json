@@ -10,6 +10,6 @@
   },
 
   "scripts": {
-    "start": "serve"
+    "start": "serve -p 80"
   }
 }
