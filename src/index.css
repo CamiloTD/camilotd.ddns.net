@@ -1,0 +1,138 @@
+.main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    width: 100vw;
+    height: 100vh;
+}
+
+.left-side {
+    display: grid;
+    grid-template-rows: 10vh 15vh 20vh;
+
+    height: 100%;
+    padding: 5vw;
+    background: url('/assets/textures/dark-honeycomb.png');
+    position: fixed;
+    width: 40vw;
+}
+
+.right-side {
+    height: 100%;
+    background: white;
+    box-shadow: -3px 0px 6px rgba(0,0,0,.5);
+    background: url('/assets/textures/seamless.png');
+}
+
+.activity-bar {
+    display: grid;
+    grid-template-columns: repeat(12, 10vw);
+    overflow: hidden;
+    width: 50vw;
+    margin-left: -5vw;
+}
+
+.activity-bar .activity-item {
+    display: grid;
+    grid-template-rows: 10vh 5vh auto;
+    justify-items: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.activity-bar .activity-item:hover {
+    transform: scale(1.1);
+    filter: brightness(130%);
+}
+
+.activity-bar .activity-item img {
+    height: 85%;
+}
+
+.activity-bar .activity-item span {
+    color: white;
+    font-family: Roboto;
+    font-size: 12px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,.5);
+    font-weight: 900;
+    width: 100%;
+    text-align: center;
+    margin-top: -20px;
+}
+
+.activity-bar .activity-item .time {
+    color: white;
+    font-family: Roboto;
+    font-size: 10px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,.5);
+    font-weight: 900;
+    width: 100%;
+    text-align: center;
+    margin-top: -60px;
+}
+
+#main-pic {
+    width: 30vw;
+    position: absolute;
+    bottom: 10vw;
+    left: 7.5vw;   
+}
+
+.name {
+    font-family: Roboto;
+    color: white;
+    font-size: 5vw;
+    text-shadow: 2px 2px 4px rgba(0,0,0,.5);
+}
+
+.subtitle {
+    font-family: Roboto;
+    color: white;
+    font-size: 1.5vw;
+    text-shadow: 2px 2px 4px rgba(0,0,0,.5);
+}
+
+.right-side h1, .right-side p, .right-side .story {
+    margin-top: 2vw;
+    margin-left: 2vw;
+    font-family: Roboto;
+    color: white;
+}
+
+.right-side h1 {
+    color: black;
+    font-family: "Marck Script";
+    text-align: center;
+}
+
+.right-side p a {
+    color: rgba(0,0,0,.5);
+}
+
+.right-side p, .right-side div {
+    color: rgba(0,0,0,.75);
+    text-shadow: none;
+    font-family: "Kalam";
+}
+
+.year {
+    font-weight: 900;
+}
+
+.description {
+    margin-left: 20px;
+}
+
+@media screen and (max-width: 1023) {
+    .main {
+        grid-template-columns: 1fr;
+        grid-template-rows: 100vh auto;
+    }
+}
+
+.links {
+    display: grid;
+    grid-template-columns: 32px auto;
+    opacity: .5;
+    width: 100%;
+}
