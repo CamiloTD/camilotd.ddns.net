@@ -19,7 +19,7 @@ function barRight () {
         marginLeft: "0px" 
     });
 
-    barLeft();
+    setTimeout(barLeft, 3000);
 }
 
 barLeft();
